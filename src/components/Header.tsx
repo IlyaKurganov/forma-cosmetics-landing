@@ -153,9 +153,10 @@ const Header = ({ scrolled }: HeaderProps) => {
 
               <Button
                 className="w-full justify-center text-base"
-                onClick={() =>
-                  window.open("https://wa.me/79166806904", "_blank")
-                }
+                onClick={() => {
+                  window.open("https://wa.me/79166806904", "_blank");
+                  setMobileMenuOpen(false);
+                }}
               >
                 <MessageCircle className="mr-2 h-5 w-5" /> Написать в WhatsApp
               </Button>
@@ -163,6 +164,7 @@ const Header = ({ scrolled }: HeaderProps) => {
               <Button
                 variant="outline"
                 className="w-full justify-center border-primary text-primary hover:bg-primary-50 text-base"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 <ShoppingBag className="mr-2 h-5 w-5" /> Перейти в каталог
               </Button>
