@@ -107,9 +107,15 @@ const BrandsMap = () => {
         </div>
 
         <div className="mt-12 flex justify-center">
+          <a
+            href={`https://drive.google.com/file/d/1kXOPexq-3psxUqLzMmK-015rvxWaXaLG/view?usp=sharing`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
           <Button size="lg" className="bg-primary hover:bg-primary-600">
             Весь ассортимент брендов <ChevronRight className="ml-2 h-5 w-5" />
           </Button>
+            </a>
         </div>
       </div>
 
