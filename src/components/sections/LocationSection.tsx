@@ -42,18 +42,6 @@ const LocationSection = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start">
-                  <Mail className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                  <div>
-                    <p className="font-medium mb-1">Email:</p>
-                    <a
-                      href="mailto:info@forma-cosmetics.ru"
-                      className="text-primary hover:text-primary-700 transition-colors"
-                    >
-                      info@forma-cosmetics.ru
-                    </a>
-                  </div>
-                </div>
 
                 <Button
                   className="w-full mt-4"
