@@ -17,7 +17,7 @@ const ContactInfo = () => {
             <div className="md:w-1/2 flex items-center justify-center bg-primary p-8 md:p-12">
               <div className="text-center">
                 <Avatar className="w-40 h-40 border-4 border-white mx-auto mb-6">
-                  <AvatarImage src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200" alt="Ирина Трубинова" />
+                  <AvatarImage src="https://iimg.su/s/13/yhdBuhw6UdDhl46CYEUrYTNuECNyzkXqLrJenYdC.jpg" alt="Ирина Трубинова" />
                   <AvatarFallback className="text-3xl bg-primary-300">ИТ</AvatarFallback>
                 </Avatar>
                 <h3 className="text-2xl font-bold text-white mb-2 font-heading">Ирина Трубинова</h3>
