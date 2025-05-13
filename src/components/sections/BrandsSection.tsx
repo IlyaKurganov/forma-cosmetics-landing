@@ -21,17 +21,13 @@ const BrandsSection = () => {
           className="w-full max-w-3xl mx-auto mb-10"
         >
           <TabsList className="grid grid-cols-2 mb-8 mx-auto w-[300px]">
-            <TabsTrigger value="2d">2D Карта</TabsTrigger>
-            <TabsTrigger value="3d">3D Карта</TabsTrigger>
+            <TabsTrigger value="2d">Карта брендов</TabsTrigger>
           </TabsList>
           
           <TabsContent value="2d">
             <BrandsMap />
           </TabsContent>
           
-          <TabsContent value="3d" className="relative min-h-[460px]">
-            <ThreeDMapBrands />
-          </TabsContent>
         </Tabs>
       </div>
     </section>
