@@ -1,4 +1,3 @@
-
 import React from "react";
 import { MapPin, Phone, MessageCircle } from "lucide-react";
 
@@ -16,16 +15,13 @@ const Footer = () => {
               />
             </div>
             <p className="mt-4 text-gray-400 max-w-md">
-              Оригинальные препараты для косметологов напрямую от
-              производителей
+              Оригинальные препараты для косметологов напрямую от производителей
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-bold mb-4 font-heading">
-                Контакты
-              </h3>
+              <h3 className="text-lg font-bold mb-4 font-heading">Контакты</h3>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <MapPin className="h-4 w-4 mr-2 text-primary-300" />

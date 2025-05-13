@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Mail, ChevronRight } from "lucide-react";
@@ -7,7 +6,7 @@ import YandexMap from "@/components/YandexMap";
 
 const LocationSection = () => {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-primary-50">
       <div className="container px-4 md:px-8 mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold font-heading mb-8 text-center text-gray-800">
           Наше расположение
@@ -42,9 +41,8 @@ const LocationSection = () => {
                   </div>
                 </div>
 
-
                 <Button
-                  className="w-full mt-4"
+                  className="w-full mt-4 bg-primary hover:bg-primary-600"
                   onClick={() =>
                     window.open("https://yandex.ru/maps/-/CHvMYXKN", "_blank")
                   }
@@ -55,6 +53,7 @@ const LocationSection = () => {
             </CardContent>
           </Card>
 
+          {/* Сохраняем остальной код */}
           <div className="flex-1 w-full h-96 md:h-[450px] rounded-lg overflow-hidden shadow-md border border-gray-200">
             <YandexMap organizationUrl="https://yandex.ru/maps/-/CHvMYXKN" />
           </div>

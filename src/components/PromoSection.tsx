@@ -9,7 +9,7 @@ const promoData = [
     id: 1,
     title: "Скидка 500 рублей на первый заказ",
     description: "Для новых клиентов при заказе от 10 000 ₽",
-    backgroundColor: "bg-primary-100",
+    backgroundColor: "bg-primary-50",
     icon: "Percent",
     expiry: "До 31 мая",
   },
@@ -17,7 +17,7 @@ const promoData = [
     id: 2,
     title: "Бесплатная доставка",
     description: "При заказе от 15 000 ₽ по Москве",
-    backgroundColor: "bg-green-100",
+    backgroundColor: "bg-primary-100",
     icon: "Truck",
     expiry: "Постоянная акция",
   },
@@ -25,7 +25,7 @@ const promoData = [
     id: 3,
     title: "Мега-акция на филлеры",
     description: "Любимый препарат по лучшей цене",
-    backgroundColor: "bg-amber-100",
+    backgroundColor: "bg-secondary",
     icon: "Gift",
     expiry: "До 31 мая",
   },
@@ -33,7 +33,7 @@ const promoData = [
     id: 4,
     title: "Скидка до 15% на Коллост",
     description: "Уникальная скидка от объема",
-    backgroundColor: "bg-blue-100",
+    backgroundColor: "bg-primary-200",
     icon: "GraduationCap",
     expiry: "Ограниченное предложение",
   },
@@ -105,13 +105,13 @@ const PromoSection = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                <Button
-                  variant="ghost"
-                  className="p-0 h-auto text-primary hover:text-primary-700 hover:bg-transparent"
-                >
-                  Подробнее <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-                  </a>
+                  <Button
+                    variant="ghost"
+                    className="p-0 h-auto text-primary hover:text-primary-700 hover:bg-transparent"
+                  >
+                    Подробнее <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </a>
               </CardContent>
             </Card>
           ))}

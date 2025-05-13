@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Menu, X, Phone, ShoppingBag, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -65,15 +64,21 @@ const ContactButtons = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-    <Button className="bg-primary hover:bg-primary-600">
-      <ShoppingBag className="mr-2 h-4 w-4" /> Каталог
-    </Button>
+      <Button className="bg-primary hover:bg-primary-600">
+        <ShoppingBag className="mr-2 h-4 w-4" /> Каталог
+      </Button>
     </a>
   </div>
 );
 
 // Компонент с мобильным меню
-const MobileMenu = ({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) => {
+const MobileMenu = ({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) => {
   // Предотвращаем прокрутку страницы, когда меню открыто
   useEffect(() => {
     if (isOpen) {
@@ -196,9 +201,9 @@ const Header = ({ scrolled }: HeaderProps) => {
       </header>
 
       {/* Мобильное меню */}
-      <MobileMenu 
-        isOpen={mobileMenuOpen} 
-        onClose={() => setMobileMenuOpen(false)} 
+      <MobileMenu
+        isOpen={mobileMenuOpen}
+        onClose={() => setMobileMenuOpen(false)}
       />
     </>
   );
