@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Percent, Clock, Tag } from "lucide-react";
 
-// Sample promotional data
 const promoData = [
   {
     id: 1,
@@ -98,7 +97,6 @@ const PromoSection = () => {
                   {promo.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{promo.description}</p>
-                // Find section: Button for "Подробнее"
                 <Button
                   variant="ghost"
                   className="p-0 h-auto text-primary hover:text-primary-700 hover:bg-transparent"
