@@ -7,32 +7,32 @@ import { ArrowRight, Percent, Clock, Tag } from "lucide-react";
 const promoData = [
   {
     id: 1,
-    title: "Скидка 15% на первый заказ",
-    description: "Для новых клиентов при заказе от 15 000 ₽",
+    title: "Скидка 500 рублей на первый заказ",
+    description: "Для новых клиентов при заказе от 10 000 ₽",
     backgroundColor: "bg-primary-100",
     icon: "Percent",
-    expiry: "До 30 июня",
+    expiry: "До 31 мая",
   },
   {
     id: 2,
     title: "Бесплатная доставка",
-    description: "При заказе от 30 000 ₽ по всей России",
+    description: "При заказе от 15 000 ₽ по Москве",
     backgroundColor: "bg-green-100",
     icon: "Truck",
     expiry: "Постоянная акция",
   },
   {
     id: 3,
-    title: "Набор пробников в подарок",
-    description: "При покупке любого продукта линейки Premium",
+    title: "Мега-акция на филлеры",
+    description: "Любимый препарат по лучшей цене",
     backgroundColor: "bg-amber-100",
     icon: "Gift",
-    expiry: "До 15 июля",
+    expiry: "До 31 мая",
   },
   {
     id: 4,
-    title: "Скидка 20% на обучение",
-    description: "При покупке продукции на сумму от 50 000 ₽",
+    title: "Скидка до 15% на Коллост",
+    description: "Уникальная скидка от объема",
     backgroundColor: "bg-blue-100",
     icon: "GraduationCap",
     expiry: "Ограниченное предложение",
@@ -100,6 +100,11 @@ const PromoSection = () => {
                 </h3>
                 <p className="text-gray-600 mb-4">{promo.description}</p>
 
+                <a
+                  href={`https://wa.me/+79166806904?text=Здравствуйте! Подскажите, какие есть актуальные акции?`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                 <Button
                   variant="ghost"
                   className="p-0 h-auto text-primary hover:text-primary-700 hover:bg-transparent"
