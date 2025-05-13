@@ -22,6 +22,19 @@ const Header = ({ scrolled }: HeaderProps) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  // Prevent scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [mobileMenuOpen]);
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -109,8 +122,25 @@ const Header = ({ scrolled }: HeaderProps) => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 bg-white z-40 pt-20 pb-6 px-4 md:hidden overflow-y-auto">
-          <div className="flex flex-col h-full">
+        <div className="fixed inset-0 top-0 left-0 w-full h-full bg-white z-40 flex flex-col md:hidden overflow-auto">
+          <div className="container px-4 mx-auto py-5 flex justify-between items-center border-b">
+            <a href="/" className="flex items-center">
+              <img
+                src="https://cdn.poehali.dev/files/017c6741-9aa5-41ec-a37c-4f8746a9a349.svg"
+                alt="FORMA Logo"
+                className="h-10"
+              />
+            </a>
+            <button
+              className="flex items-center text-gray-700"
+              onClick={() => setMobileMenuOpen(false)}
+              aria-label="Закрыть меню"
+            >
+              <X className="h-6 w-6" />
+            </button>
+          </div>
+
+          <div className="flex flex-col flex-1 container px-4 mx-auto pt-8 pb-6">
             <nav className="flex flex-col space-y-6 mb-8">
               <a
                 href="#promo"
