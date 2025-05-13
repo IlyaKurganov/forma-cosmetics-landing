@@ -32,7 +32,7 @@ const Index = () => {
       <Header scrolled={scrolled} />
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-b from-primary-50 to-white pt-24 pb-20 md:py-32">
+      <section className="relative bg-gradient-to-b from-primary-50 to-white pt-28 md:pt-32 pb-20 md:pb-32">
         <div className="container px-4 md:px-8 mx-auto">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto animate-fade-in">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-gray-800 px-4">
