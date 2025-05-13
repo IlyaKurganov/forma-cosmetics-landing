@@ -90,7 +90,7 @@ const BrandsMap = () => {
                       {brand.name}
                     </h3>
                     <a
-                      href="https://wa.me/+79166806904"
+                      href={`https://wa.me/+79166806904?text=Здравствуйте! Интересует продукция бренда ${encodeURIComponent(brand.name)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
