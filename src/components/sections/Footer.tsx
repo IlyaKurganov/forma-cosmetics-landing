@@ -9,7 +9,7 @@ const Footer = () => {
           <div className="mb-8 md:mb-0">
             <div className="flex items-center">
               <img
-                src="https://cdn.poehali.dev/files/1e19e5d5-8063-452c-8b53-f36684cb668e.png"
+                src="https://cdn.poehali.dev/files/017c6741-9aa5-41ec-a37c-4f8746a9a349.svg"
                 alt="FORMA Logo"
                 className="h-12 mr-3"
               />
