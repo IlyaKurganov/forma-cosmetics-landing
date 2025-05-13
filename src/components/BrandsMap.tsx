@@ -80,10 +80,7 @@ const BrandsMap = () => {
                 </h3>
 
                 <div
-                  className={`
-                  absolute inset-0 bg-primary-50/90 flex items-center justify-center opacity-0 
-                  transition-opacity group-hover:opacity-100 p-4
-                `}
+                  className={`absolute inset-0 bg-primary-50/90 flex items-center justify-center opacity-0 transition-opacity group-hover:opacity-100 p-4`}
                 >
                   <div className="text-center">
                     <h3 className="font-bold text-gray-800 mb-2">
@@ -94,10 +91,9 @@ const BrandsMap = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                    <Button size="sm">
-                      Узнать{" "}
-                      <ChevronRight className="ml-1 h-4 w-4" />
-                    </Button>
+                      <Button size="sm">
+                        Узнать <ChevronRight className="ml-1 h-4 w-4" />
+                      </Button>
                     </a>
                   </div>
                 </div>
@@ -112,10 +108,13 @@ const BrandsMap = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-          <Button size="lg" className="bg-primary hover:bg-primary-600">
-            Весь ассортимент брендов <ChevronRight className="ml-2 h-5 w-5" />
-          </Button>
-            </a>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary-600 text-white"
+            >
+              Весь ассортимент брендов <ChevronRight className="ml-2 h-5 w-5" />
+            </Button>
+          </a>
         </div>
       </div>
 

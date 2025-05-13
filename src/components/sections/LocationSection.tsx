@@ -42,7 +42,7 @@ const LocationSection = () => {
                 </div>
 
                 <Button
-                  className="w-full mt-4 bg-primary hover:bg-primary-600"
+                  className="w-full mt-4 bg-primary hover:bg-primary-600 text-white"
                   onClick={() =>
                     window.open("https://yandex.ru/maps/-/CHvMYXKN", "_blank")
                   }

@@ -64,7 +64,7 @@ const ContactButtons = () => (
       target="_blank"
       rel="noopener noreferrer"
     >
-      <Button className="bg-primary hover:bg-primary-600">
+      <Button className="bg-primary hover:bg-primary-600 text-white">
         <ShoppingBag className="mr-2 h-4 w-4" /> Каталог
       </Button>
     </a>

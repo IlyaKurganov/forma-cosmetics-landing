@@ -94,24 +94,17 @@ const PromoSection = () => {
                     <span>{promo.expiry}</span>
                   </div>
                 </div>
-
                 <h3 className="text-xl font-bold mb-2 font-heading text-gray-800">
                   {promo.title}
                 </h3>
                 <p className="text-gray-600 mb-4">{promo.description}</p>
-
-                <a
-                  href={`https://wa.me/+79166806904?text=Здравствуйте! Подскажите, какие есть актуальные акции?`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                // Find section: Button for "Подробнее"
+                <Button
+                  variant="ghost"
+                  className="p-0 h-auto text-primary hover:text-primary-700 hover:bg-transparent"
                 >
-                  <Button
-                    variant="ghost"
-                    className="p-0 h-auto text-primary hover:text-primary-700 hover:bg-transparent"
-                  >
-                    Подробнее <ArrowRight className="ml-2 h-4 w-4" />
-                  </Button>
-                </a>
+                  Подробнее <ArrowRight className="ml-2 h-4 w-4" />
+                </Button>
               </CardContent>
             </Card>
           ))}

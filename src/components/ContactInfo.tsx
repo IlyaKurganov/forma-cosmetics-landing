@@ -14,7 +14,6 @@ const ContactInfo = () => {
         <CardContent className="p-0">
           <div className="flex flex-col md:flex-row">
             <div className="md:w-1/2 flex items-center justify-center bg-primary p-8 md:p-12">
-              {/* Сохраняем контент, меняем только цвета */}
               <div className="text-center">
                 <Avatar className="w-40 h-40 border-4 border-white mx-auto mb-6">
                   <AvatarImage
@@ -33,7 +32,6 @@ const ContactInfo = () => {
             </div>
 
             <div className="md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
-              {/* Сохраняем текст без изменений */}
               <p className="text-lg text-gray-600 mb-8">
                 Ирина поможет вам подобрать оптимальные препараты под ваши
                 задачи, ответит на все вопросы и обеспечит индивидуальный подход
@@ -54,7 +52,7 @@ const ContactInfo = () => {
 
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Button
-                    className="bg-primary hover:bg-primary-600"
+                    className="bg-primary hover:bg-primary-600 text-white"
                     onClick={() => window.open("tel:+79166806904", "_blank")}
                   >
                     <Phone className="mr-2 h-4 w-4" /> Позвонить
