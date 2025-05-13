@@ -137,7 +137,14 @@ const Index = () => {
             </Card>
 
             <div className="flex-1 w-full h-96 md:h-[450px] rounded-lg overflow-hidden shadow-md border border-gray-200">
-              <div id="yandex-map" className="w-full h-full rounded-lg"></div>
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A45bd5015b723bd7ca3cd668ccf85ede28c4fcf376862fa6df17a137751a0e4fe&amp;source=constructor"
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                title="Местоположение компании FORMA"
+                className="w-full h-full"
+              ></iframe>
             </div>
           </div>
         </div>
