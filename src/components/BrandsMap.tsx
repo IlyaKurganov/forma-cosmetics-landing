@@ -6,43 +6,43 @@ import { ChevronRight } from "lucide-react";
 const brands = [
   {
     id: 1,
-    name: "Natura Bisse",
-    logo: "https://images.unsplash.com/photo-1581417478175-a9ef18f210c2?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "Релатокс",
+    logo: "https://iimg.su/s/13/ioIPScuJHcfU4wDj1EzrapVzTPfGn6eS7DETwWqm.jpg",
   },
   {
     id: 2,
-    name: "SkinCeuticals",
-    logo: "https://images.unsplash.com/photo-1629793926139-4919047ebc4d?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "Belotero",
+    logo: "https://iimg.su/s/13/5spLURs5NSc6rqTvjPLDvMl6WFeSQTHmF0rowzqd.jpg",
   },
   {
     id: 3,
-    name: "Obagi",
-    logo: "https://images.unsplash.com/photo-1570513896641-4c02b4a48b4d?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "Revi",
+    logo: "https://iimg.su/s/13/I1ISuNlV4Sykt9YMRT4VpI2SMj8JOZ2bh7STUvkt.jpg",
   },
   {
     id: 4,
-    name: "La Prairie",
-    logo: "https://images.unsplash.com/photo-1629187916687-4e97e5c3afe1?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "Bellarti",
+    logo: "https://iimg.su/s/13/rAdW2Xt2gKaP20P7GHByFk17hPDPgIUgMAIEedu1.jpg",
   },
   {
     id: 5,
-    name: "Valmont",
-    logo: "https://images.unsplash.com/photo-1583946099793-2e73ea6f7e74?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "Коллост",
+    logo: "https://iimg.su/s/13/UB9eX42gzio2Znp1AmUVisRgDm0ImEo0Uo1SX7Z6.jpg",
   },
   {
     id: 6,
-    name: "Biologique Recherche",
-    logo: "https://images.unsplash.com/photo-1574179637783-4550ffe5236e?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "BioGel",
+    logo: "https://iimg.su/s/13/RSShHVyJvyQMbaX5dHenKqKQUD30MmUGMmLpzCXc.jpg",
   },
   {
     id: 7,
-    name: "Sisley",
-    logo: "https://images.unsplash.com/photo-1631281956016-3cdc1b2fe5fb?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "Repart",
+    logo: "https://iimg.su/s/13/yfOIQJ1WTzFTxhe6kygpdBAT2BpM9BD8uN58GvtZ.jpg",
   },
   {
     id: 8,
-    name: "ZO Skin Health",
-    logo: "https://images.unsplash.com/photo-1628177142780-ae2be7c4e275?auto=format&fit=crop&q=80&w=150&h=150",
+    name: "FillMed",
+    logo: "https://iimg.su/s/13/Hnlu8B0CCuzDQR7dm0xUcxyzEfkwFH6vsT2AmQfq.jpg",
   },
 ];
 
@@ -89,10 +89,16 @@ const BrandsMap = () => {
                     <h3 className="font-bold text-gray-800 mb-2">
                       {brand.name}
                     </h3>
+                    <a
+                      href="https://wa.me/+79166806904"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
                     <Button size="sm">
-                      Смотреть продукцию{" "}
+                      Узнать{" "}
                       <ChevronRight className="ml-1 h-4 w-4" />
                     </Button>
+                    </a>
                   </div>
                 </div>
               </div>
