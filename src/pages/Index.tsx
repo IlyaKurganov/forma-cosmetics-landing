@@ -35,31 +35,13 @@ const Index = () => {
       <section className="relative bg-gradient-to-b from-primary-50 to-white py-20 md:py-32">
         <div className="container px-4 md:px-8 mx-auto">
           <div className="flex flex-col items-center text-center max-w-3xl mx-auto animate-fade-in">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold font-heading mb-6 text-gray-800 px-2">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold font-heading mb-6 text-gray-800 px-4">
               Оригинальные препараты для профессиональных косметологов
             </h1>
-            <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-8 font-body px-2">
+            <p className="text-base md:text-lg lg:text-xl text-gray-600 mb-8 font-body px-4">
               Прямые контракты с производителями, гарантированное качество,
               привлекательные цены и широкий ассортимент
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary-600 text-white px-8"
-              >
-                <ShoppingBag className="mr-2 h-5 w-5" /> Перейти в каталог
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-primary text-primary hover:bg-primary-50"
-                onClick={() =>
-                  window.open("https://wa.me/79166806904", "_blank")
-                }
-              >
-                <MessageCircle className="mr-2 h-5 w-5" /> Написать в WhatsApp
-              </Button>
-            </div>
           </div>
         </div>
 
