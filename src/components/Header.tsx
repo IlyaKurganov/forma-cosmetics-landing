@@ -60,12 +60,15 @@ const ContactButtons = () => (
       <MessageCircle className="mr-2 h-4 w-4" /> WhatsApp
     </Button>
 
-    
-    <Button 
-      className="bg-primary hover:bg-primary-600"
-      onClick={() => window.open("https://drive.google.com/file/d/1kXOPexq-3psxUqLzMmK-015rvxWaXaLG/view?usp=sharing", "_blank")>
+    <a
+      href={`https://drive.google.com/file/d/1kXOPexq-3psxUqLzMmK-015rvxWaXaLG/view?usp=sharing`}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+    <Button className="bg-primary hover:bg-primary-600">
       <ShoppingBag className="mr-2 h-4 w-4" /> Каталог
     </Button>
+    </a>
   </div>
 );
 
