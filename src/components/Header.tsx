@@ -120,9 +120,9 @@ const Header = ({ scrolled }: HeaderProps) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu - Positioned fixed to viewport */}
       {mobileMenuOpen && (
-        <div className="fixed inset-0 top-0 left-0 w-full h-full bg-white z-40 flex flex-col md:hidden overflow-auto">
+        <div className="fixed inset-0 bg-white z-40 flex flex-col md:hidden overflow-auto">
           <div className="container px-4 mx-auto py-5 flex justify-between items-center border-b">
             <a href="/" className="flex items-center">
               <img
