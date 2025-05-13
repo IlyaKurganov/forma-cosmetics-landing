@@ -20,9 +20,7 @@ const BrandsSection = () => {
           onValueChange={setActiveTab}
           className="w-full max-w-3xl mx-auto mb-10"
         >
-          <TabsList className="grid grid-cols-2 mb-8 mx-auto w-[300px]">
-            <TabsTrigger value="2d">Карта брендов</TabsTrigger>
-          </TabsList>
+
           
           <TabsContent value="2d">
             <BrandsMap />
